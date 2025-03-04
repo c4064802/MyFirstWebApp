@@ -1,9 +1,84 @@
-<html>
-    <head>
-        <title> Hello World</title>
-    </head>
-
-    <body>
-        <h1>Hello World Again</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .planet {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            width: 600px;
+        }
+        .planet img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-right: 20px;
+        }
+        .summary {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solar System Planets</h1>
+    <div class="container">
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Mercury_in_color_-_Prockter07_centered.jpg" alt="Mercury">
+            <p><strong>Mercury:</strong> The smallest planet in our solar system and closest to the Sun, Mercury has a surface marked by craters and extreme temperature variations.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
+            <p><strong>Venus:</strong> Known as Earth's twin due to its similar size, Venus has a thick, toxic atmosphere that traps heat, making it the hottest planet.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+            <p><strong>Earth:</strong> The only planet known to support life, Earth has a vast diversity of ecosystems and a unique atmosphere that sustains living organisms.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+            <p><strong>Mars:</strong> Known as the Red Planet, Mars has evidence of ancient water flows and is a key focus of exploration for potential past or present life.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="Jupiter">
+            <p><strong>Jupiter:</strong> The largest planet in the solar system, Jupiter is a gas giant with a massive storm known as the Great Red Spot.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Saturn_our_solarsystem.png" alt="Saturn">
+            <p><strong>Saturn:</strong> Famous for its stunning ring system, Saturn is another gas giant that has numerous moons, including Titan, which has a dense atmosphere.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
+            <p><strong>Uranus:</strong> A unique ice giant that rotates on its side, Uranus has a pale blue color due to methane in its atmosphere.</p>
+        </div>
+        <div class="planet">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
+            <p><strong>Neptune:</strong> The farthest planet from the Sun, Neptune is known for its deep blue color and the fastest winds in the solar system.</p>
+        </div>
+    </div>
+    <div class="summary">
+        <h2>Research on Solar Systems</h2>
+        <p>Over the years, extensive research has been conducted on our solar system and beyond. NASA, ESA, and other space agencies have launched missions like Voyager, Cassini, and Perseverance to explore planets, moons, and asteroids. Scientists are particularly interested in exoplanets—planets outside our solar system—as they search for habitable worlds. Discoveries about planetary atmospheres, water presence, and celestial mechanics continue to shape our understanding of the universe.</p>
+    </div>
+</body>
 </html>
