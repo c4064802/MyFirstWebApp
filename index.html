@@ -31,6 +31,13 @@
             border-radius: 10px;
             width: 600px;
             box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .planet:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.6);
         }
         .planet img {
             width: 120px;
@@ -43,6 +50,27 @@
             text-align: left;
             font-size: 1.1em;
             line-height: 1.5;
+        }
+        .planet .details {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            font-size: 0.9em;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .planet:hover .details {
+            display: block;
+            opacity: 1;
         }
         .summary {
             max-width: 700px;
@@ -74,34 +102,58 @@
         <div class="planet mercury">
             <img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png" alt="Mercury">
             <p><strong>Mercury:</strong> The smallest planet in our solar system and closest to the Sun, Mercury has a surface marked by craters and extreme temperature variations.</p>
+            <div class="details">
+                <p>Mercury's temperature can range from -173°C at night to 427°C during the day due to its thin atmosphere.</p>
+            </div>
         </div>
         <div class="planet venus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
             <p><strong>Venus:</strong> Known as Earth's twin due to its similar size, Venus has a thick, toxic atmosphere that traps heat, making it the hottest planet.</p>
+            <div class="details">
+                <p>Venus has a thick atmosphere mostly made of carbon dioxide, creating a runaway greenhouse effect.</p>
+            </div>
         </div>
         <div class="planet earth">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
             <p><strong>Earth:</strong> The only planet known to support life, Earth has a vast diversity of ecosystems and a unique atmosphere that sustains living organisms.</p>
+            <div class="details">
+                <p>Earth's surface is 71% water, and its atmosphere contains 21% oxygen, which supports life.</p>
+            </div>
         </div>
         <div class="planet mars">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
             <p><strong>Mars:</strong> Known as the Red Planet, Mars has evidence of ancient water flows and is a key focus of exploration for potential past or present life.</p>
+            <div class="details">
+                <p>Mars is home to the tallest volcano in the solar system, Olympus Mons, which is about 13.6 miles high.</p>
+            </div>
         </div>
         <div class="planet jupiter">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="Jupiter">
             <p><strong>Jupiter:</strong> The largest planet in the solar system, Jupiter is a gas giant with a massive storm known as the Great Red Spot.</p>
+            <div class="details">
+                <p>Jupiter's Great Red Spot is a massive storm that has been raging for over 400 years.</p>
+            </div>
         </div>
         <div class="planet saturn">
             <img src="https://space-facts.com/wp-content/uploads/saturn-transparent.png" alt="Saturn">
             <p><strong>Saturn:</strong> Famous for its stunning ring system, Saturn is another gas giant that has numerous moons, including Titan, which has a dense atmosphere.</p>
+            <div class="details">
+                <p>Saturn's rings are made up of billions of ice particles, some as large as mountains.</p>
+            </div>
         </div>
         <div class="planet uranus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
             <p><strong>Uranus:</strong> A unique ice giant that rotates on its side, Uranus has a pale blue color due to methane in its atmosphere.</p>
+            <div class="details">
+                <p>Uranus rotates at a tilt of 98 degrees, making it the only planet that rotates sideways.</p>
+            </div>
         </div>
         <div class="planet neptune">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
             <p><strong>Neptune:</strong> The farthest planet from the Sun, Neptune is known for its deep blue color and the fastest winds in the solar system.</p>
+            <div class="details">
+                <p>Neptune's winds can reach speeds of up to 1,200 miles per hour, the fastest in the solar system.</p>
+            </div>
         </div>
     </div>
     <div class="summary">
