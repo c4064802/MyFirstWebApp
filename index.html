@@ -8,9 +8,14 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #000;
+            background-color: #0b0b3b;
             color: white;
             padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
         .container {
             display: flex;
@@ -21,57 +26,80 @@
         .planet {
             display: flex;
             align-items: center;
-            background: rgba(255, 255, 255, 0.1);
+            justify-content: space-between;
             padding: 15px;
             border-radius: 10px;
             width: 600px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
         }
         .planet img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 2px solid white;
+            border: 3px solid white;
             margin-right: 20px;
         }
-        .summary {
-            max-width: 600px;
-            margin: 30px auto;
-            text-align: justify;
+        .planet p {
+            text-align: left;
+            font-size: 1.1em;
+            line-height: 1.5;
         }
+        .summary {
+            max-width: 700px;
+            margin: 40px auto;
+            text-align: justify;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .mercury { background-color: #8c8c8c; }
+        .venus { background-color: #e1a95f; }
+        .earth { background-color: #2a9df4; }
+        .mars { background-color: #d14a28; }
+        .jupiter { background-color: #c5865d; }
+        .saturn { background-color: #deb887; }
+        .uranus { background-color: #5fbcd3; }
+        .neptune { background-color: #4363d8; }
     </style>
 </head>
 <body>
     <h1>Solar System Planets</h1>
     <div class="container">
-        <div class="planet">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Mercury_in_color_-_Prockter07_centered.jpg" alt="Mercury">
+        <div class="planet mercury">
+            <img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png" alt="Mercury">
             <p><strong>Mercury:</strong> The smallest planet in our solar system and closest to the Sun, Mercury has a surface marked by craters and extreme temperature variations.</p>
         </div>
-        <div class="planet">
+        <div class="planet venus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
             <p><strong>Venus:</strong> Known as Earth's twin due to its similar size, Venus has a thick, toxic atmosphere that traps heat, making it the hottest planet.</p>
         </div>
-        <div class="planet">
+        <div class="planet earth">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
             <p><strong>Earth:</strong> The only planet known to support life, Earth has a vast diversity of ecosystems and a unique atmosphere that sustains living organisms.</p>
         </div>
-        <div class="planet">
+        <div class="planet mars">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
             <p><strong>Mars:</strong> Known as the Red Planet, Mars has evidence of ancient water flows and is a key focus of exploration for potential past or present life.</p>
         </div>
-        <div class="planet">
+        <div class="planet jupiter">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="Jupiter">
             <p><strong>Jupiter:</strong> The largest planet in the solar system, Jupiter is a gas giant with a massive storm known as the Great Red Spot.</p>
         </div>
-        <div class="planet">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Saturn_our_solarsystem.png" alt="Saturn">
+        <div class="planet saturn">
+            <img src="https://space-facts.com/wp-content/uploads/saturn-transparent.png" alt="Saturn">
             <p><strong>Saturn:</strong> Famous for its stunning ring system, Saturn is another gas giant that has numerous moons, including Titan, which has a dense atmosphere.</p>
         </div>
-        <div class="planet">
+        <div class="planet uranus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
             <p><strong>Uranus:</strong> A unique ice giant that rotates on its side, Uranus has a pale blue color due to methane in its atmosphere.</p>
         </div>
-        <div class="planet">
+        <div class="planet neptune">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
             <p><strong>Neptune:</strong> The farthest planet from the Sun, Neptune is known for its deep blue color and the fastest winds in the solar system.</p>
         </div>
