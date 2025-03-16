@@ -25,6 +25,7 @@
         }
         .planet {
             display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
             padding: 15px;
@@ -94,6 +95,28 @@
         .saturn { background-color: #deb887; }
         .uranus { background-color: #5fbcd3; }
         .neptune { background-color: #4363d8; }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .planet {
+                flex-direction: column;
+                width: 90%;
+                text-align: center;
+                padding: 10px;
+            }
+            .planet img {
+                width: 100px;
+                height: 100px;
+                margin: 10px 0;
+            }
+            .planet p {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -101,64 +124,64 @@
     <div class="container">
         <div class="planet mercury">
             <img src="https://space-facts.com/wp-content/uploads/mercury-transparent.png" alt="Mercury">
-            <p><strong>Mercury:</strong> The smallest planet in our solar system and closest to the Sun, Mercury has a surface marked by craters and extreme temperature variations.</p>
+            <p><strong>Mercury:</strong> The smallest planet in our solar system.</p>
             <div class="details">
-                <p>Mercury's temperature can range from -173°C at night to 427°C during the day due to its thin atmosphere.</p>
+                <p>Temperature varies from -173°C to 427°C.</p>
             </div>
         </div>
         <div class="planet venus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus">
-            <p><strong>Venus:</strong> Known as Earth's twin due to its similar size, Venus has a thick, toxic atmosphere that traps heat, making it the hottest planet.</p>
+            <p><strong>Venus:</strong> Earth's twin with a thick, toxic atmosphere.</p>
             <div class="details">
-                <p>Venus has a thick atmosphere mostly made of carbon dioxide, creating a runaway greenhouse effect.</p>
+                <p>Runaway greenhouse effect makes it the hottest planet.</p>
             </div>
         </div>
         <div class="planet earth">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
-            <p><strong>Earth:</strong> The only planet known to support life, Earth has a vast diversity of ecosystems and a unique atmosphere that sustains living organisms.</p>
+            <p><strong>Earth:</strong> The only planet known to support life.</p>
             <div class="details">
-                <p>Earth's surface is 71% water, and its atmosphere contains 21% oxygen, which supports life.</p>
+                <p>71% of its surface is covered in water.</p>
             </div>
         </div>
         <div class="planet mars">
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
-            <p><strong>Mars:</strong> Known as the Red Planet, Mars has evidence of ancient water flows and is a key focus of exploration for potential past or present life.</p>
+            <p><strong>Mars:</strong> The Red Planet, with evidence of past water.</p>
             <div class="details">
-                <p>Mars is home to the tallest volcano in the solar system, Olympus Mons, which is about 13.6 miles high.</p>
+                <p>Home to Olympus Mons, the tallest volcano.</p>
             </div>
         </div>
         <div class="planet jupiter">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Jupiter_New_Horizons.jpg" alt="Jupiter">
-            <p><strong>Jupiter:</strong> The largest planet in the solar system, Jupiter is a gas giant with a massive storm known as the Great Red Spot.</p>
+            <p><strong>Jupiter:</strong> The largest planet with the Great Red Spot.</p>
             <div class="details">
-                <p>Jupiter's Great Red Spot is a massive storm that has been raging for over 400 years.</p>
+                <p>Its storm has been raging for over 400 years.</p>
             </div>
         </div>
         <div class="planet saturn">
             <img src="https://space-facts.com/wp-content/uploads/saturn-transparent.png" alt="Saturn">
-            <p><strong>Saturn:</strong> Famous for its stunning ring system, Saturn is another gas giant that has numerous moons, including Titan, which has a dense atmosphere.</p>
+            <p><strong>Saturn:</strong> Famous for its rings made of ice and rock.</p>
             <div class="details">
-                <p>Saturn's rings are made up of billions of ice particles, some as large as mountains.</p>
+                <p>Has over 80 moons, including Titan.</p>
             </div>
         </div>
         <div class="planet uranus">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg" alt="Uranus">
-            <p><strong>Uranus:</strong> A unique ice giant that rotates on its side, Uranus has a pale blue color due to methane in its atmosphere.</p>
+            <p><strong>Uranus:</strong> Rotates sideways and appears light blue.</p>
             <div class="details">
-                <p>Uranus rotates at a tilt of 98 degrees, making it the only planet that rotates sideways.</p>
+                <p>Has faint rings and a cold atmosphere.</p>
             </div>
         </div>
         <div class="planet neptune">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Neptune_Full.jpg" alt="Neptune">
-            <p><strong>Neptune:</strong> The farthest planet from the Sun, Neptune is known for its deep blue color and the fastest winds in the solar system.</p>
+            <p><strong>Neptune:</strong> The windiest planet in the solar system.</p>
             <div class="details">
-                <p>Neptune's winds can reach speeds of up to 1,200 miles per hour, the fastest in the solar system.</p>
+                <p>Winds can reach up to 1,200 mph.</p>
             </div>
         </div>
     </div>
     <div class="summary">
         <h2>Research on Solar Systems</h2>
-        <p>Over the years, extensive research has been conducted on our solar system and beyond. NASA, ESA, and other space agencies have launched missions like Voyager, Cassini, and Perseverance to explore planets, moons, and asteroids. Scientists are particularly interested in exoplanets—planets outside our solar system—as they search for habitable worlds. Discoveries about planetary atmospheres, water presence, and celestial mechanics continue to shape our understanding of the universe.</p>
+        <p>NASA, ESA, and others continue exploring planets and moons.</p>
     </div>
 </body>
 </html>
